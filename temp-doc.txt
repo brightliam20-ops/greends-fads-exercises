@@ -1,0 +1,15 @@
+5.1. Can you explain the copy (cp ../temp-* .) command used above?
+- `cp` is the command used to copy files or directories.
+- `../temp-*` looks in the parent directory (`..`) for any files starting with `temp-`.
+- `.` specifies the destination, which represents the current working directory (`greends-fads-exercises`).
+In summary, it copies all files starting with "temp-" from the parent folder into the current project folder.
+
+5.2. Can you explain why, in this case, we did not have to do `git init`?
+We did not need to run `git init` because the directory was created using `git clone`. When you clone an existing repository from GitHub, Git automatically downloads and configures the hidden `.git` folder for you.
+
+5.3. Can you commit the files copied? What do you need to do?
+Yes. To commit these files, you need to execute two commands:
+1. Stage the untracked and modified files:
+   git add .
+2. Commit the staged changes with a descriptive message:
+   git commit -m "Add practice files and answer section 5 questions"
